@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>step form</title>
+      <link rel="stylesheet" type="text/css" href="css/stepform.css" />
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+   </head>
+   <body>
+      <!-- main wrapper start-->
+      <div class="wrapper">
+         <div class="container">
+            <div class="col-sm-12 detail">
+               <h2>Apply for your ICO</h2>
+               <p>Businesses will be given the exclusive opportunity to launch their token within NEXT.exchange.</p>
+            </div>
+         </div>
+         <div class="container boxshadow">
+            <div class="topnav">
+               <div class="stepwizard">
+                  <div class="stepwizard-row setup-panel">
+                     <div class="stepwizard-step col-xs-1">
+                        <p><small>ICO</small></p>
+                        <a href="#step-1" type="button" class="btn btn-success btn-circle">ICO details</a>
+                     </div>
+                     <div class="stepwizard-step col-xs-1">
+                        <p><small>Additional</small></p>
+                        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">More information</a>
+                     </div>
+                     <div class="stepwizard-step col-xs-1">
+                        <p><small>Summary</small></p>
+                        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">Overview</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <form role="form">
+               <!-- step 1 start -->
+               <div class="panel panel-primary setup-content" id="step-1">
+                  <div class="panel-body">
+                     <div class="form-group">
+                        <label class="control-label">ICO name</label>
+                        <input maxlength="100" type="text" required="required" class="form-control" />
+                        <span class="help-block">Write the name of the ICO</span>
+                     </div>
+                     <div class="form-group">
+                        <label class="control-label">ICO symbol</label>
+                        <input maxlength="100" type="text" required="required" class="form-control" />
+                        <span class="help-block">Symbol of your token, like Ethereum is ETH</span>
+                     </div>
+                      <div class="form-group">
+                        <label class="control-label">What is the total supply of the token?</label>
+                        <input maxlength="100" type="text" required="required" class="form-control" />
+                        <span class="help-block">The total supply of the token</span>
+                     </div>
+                     <div class="form-group stage">
+                        <label for="sel1">Stage of ICO</label>
+                        <select class="form-control" id="sel1">
+                           <option>In development</option>
+                           <option>PRE ICO</option>
+                           <option>ICO</option>
+                        </select>
+                     </div>
+                     <div class="form-group ">
+                        <label for="date">Date of launch</label>
+                        <input id="launch_date" required="" name="launch_date" placeholder="MM/DD/YYYY" class="form-control input-md" type="date">
+                        <span class="help-block">For ex. 12/01/2017</span>
+                     </div>
+                     <div class="form-group ">
+                        <label  for="initial_price">Initial price</label>
+                        <div class="input-group">
+                           <span class="input-group-addon">$</span>
+                           <input id="initial_price" required="" name="initial_price" class="form-control" placeholder="" type="text">
+                        </div>
+                        <span class="help-block">The initial price in $ for one token</span>
+                     </div>
+                     <div class="form-group">
+                        <label class="control-label">Short description</label>
+                        <input maxlength="100" type="text" required="required" class="form-control" />
+                        <span class="help-block">Describe your token in one line</span>
+                     </div>
+                     <div class="message">
+                        <label>Full description</label>
+                        <textarea id="full_description" required="" name="full_description"></textarea>
+                        <span class="help-block">Pitch here your token and why investors needs your token, what are the bonuses</span>
+                     </div>
+                    
+                  </div>
+                    <div class="bottom section">
+                        <div class="col-sm-6">
+                           <nav class="navbar btn-toolbar sw-toolbar sw-toolbar-bottom">
+                              <div class="btn-group navbar-btn sw-btn-group-extra pull-right" role="group">
+                                 <button class="btn btn-info">Finish</button>
+                                 <button class="btn btn-danger">Cancel</button>
+                              </div>
+                           </nav>
+                        </div>
+                        <div class="col-sm-6 right">
+                           <button class="btn btn-default preBtn disabled" type="button">Previous</button>
+                           <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                        </div>
+                     </div>
+               </div>
+               <!-- step 1 end -->
+               <!-- step 2 start -->
+               <div class="panel panel-primary setup-content" id="step-2">
+                  <div class="panel-body">
+                     <div class="form-group">
+                        <label class="control-label">Website URL</label>
+                        <input maxlength="100" type="text" required="required" class="form-control"  placeholder="https://next.exchange" />
+                        <span class="help-block">Please include full url with http(s)</span>
+                     </div>
+                     <div class="form-group">
+                        <label class="control-label">Whitepaper URL</label>
+                        <input  type="text" required="required" class="form-control"  placeholder="https://next.exchange/whitepaper" />
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                     <div class="form-group">
+                        <label class="control-label">Twitter URL</label>
+                        <input type="text" required="required" class="form-control"  placeholder="https://next.exchange/whitepaper" />
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                     <div class="form-group ">
+                        <label for="date">Facebook URL</label>
+                        <input id="facebook" required="" name="launch_date" class="form-control" type="text">
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                     <div class="form-group ">
+                        <label for="date">Telegram URL</label>
+                        <input id="facebook" required="" name="launch_date" class="form-control" type="text">
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                     <div class="form-group ">
+                        <label for="date">BitCoinTalk URL</label>
+                        <input id="facebook" required="" name="launch_date" class="form-control input-md" type="text">
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                     <div class="form-group ">
+                        <label for="date">Official video URL</label>
+                        <input id="facebook" required="" name="launch_date" class="form-control input-md" type="text">
+                        <span class="help-block">Where we can find more information</span>
+                     </div>
+                    
+                  </div>
+                    <div class="bottom section">
+                        <div class="col-sm-6">
+                           <nav class="navbar btn-toolbar sw-toolbar sw-toolbar-bottom">
+                              <div class="btn-group navbar-btn sw-btn-group-extra pull-right" role="group">
+                                 <button class="btn btn-info">Finish</button>
+                                 <button class="btn btn-danger">Cancel</button>
+                              </div>
+                           </nav>
+                        </div>
+                        <div class="col-sm-6 right">
+                           <button class="btn btn-default preBtn disabled" type="button">Previous</button>
+                           <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                        </div>
+                     </div>
+               </div>
+               <!-- step 2 end --
+                  <!-- step 3 start --->
+               <div class="panel panel-primary setup-content" id="step-3">
+                  <div class="information">
+                     <h3>Summary</h3>
+                     <table class="table table-striped">
+                        <tbody>
+                           <tr>
+                              <td>Coin Name</td>
+                              <td>RFD</td>
+                           </tr>
+                           <tr>
+                              <td>Symbol</td>
+                              <td>ff</td>
+                           </tr>
+                           <tr>
+                              <td>Total Supply Token</td>
+                              <td>fff</td>
+                           </tr>
+                           <tr>
+                              <td>launch Date</td>
+                              <td>fff</td>
+                           </tr>
+                           <tr>
+                              <td>Initial Price</td>
+                              <td>ff</td>
+                           </tr>
+                           <tr>
+                              <td>Short Description</td>
+                              <td>fff</td>
+                           </tr>
+                           <tr>
+                              <td>Full Description</td>
+                              <td>ff</td>
+                           </tr>
+                           <tr>
+                              <td>Website Url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                           <tr>
+                              <td>Whitepaper Url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                           <tr>
+                              <td>Twitter Url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                           <tr>
+                              <td>facebook_url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                           <tr>
+                              <td>Telegram Url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                           <tr>
+                              <td>Bitcointalk Url</td>
+                              <td>https://next.exchange/ico/listing#step-2</td>
+                           </tr>
+                        </tbody>
+                        <div></div>
+                     </table>
+                  </div>
+                  <div class="bottom section">
+                     <div class="col-sm-6">
+                        <nav class="navbar btn-toolbar sw-toolbar sw-toolbar-bottom">
+                           <div class="btn-group navbar-btn sw-btn-group-extra pull-right" role="group">
+                              <button class="btn btn-info">Finish</button>
+                              <button class="btn btn-danger">Cancel</button>
+                           </div>
+                        </nav>
+                     </div>
+                     <div class="col-sm-6 right">
+                        <button class="btn btn-default preBtn " type="button">Previous</button>
+                        <button class="btn btn-primary nextBtn pull-right disabled" type="button">Next</button>
+                     </div>
+                  </div>
+               </div>
+               <!-- step 3 end --->
+            </form>
+         </div>
+         <!-- footer  text start -->
+         <div class="conditions">
+            <div class="container">
+               <h4>Conditions</h4>
+               <ul>
+                  <li>For elligability your business must:</li>
+                  <li>* be incorporated as a legal entity</li>
+                  <li>* have not launched / will not launch a similar or identical sale (directly or indirectly)</li>
+                  <li>* not have received (through investment or revenue) a sum of more than 1,000,000 (one million euros) since the date of incorporation</li>
+                  <li>* have a White-Paper detailing the use of the token/coin and have a clear definition of the services provided</li>
+                  <li>* your business intends to launch its initial coin offering right now</li>
+                  <li>
+                     <p>All applications will undergo a detailed check regarding the intentions, whitepaper and proposed funding methods. Our team will also undertake background checks to ensure compliance with regulatory processes and requirements. In addition all applicants will be required to assist in such processes as KYC (Know Your Customer) and AML (Anti-Money Laundering) throughout the ICO lifetime.</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- footer text end-->
+         <!-- main wrapper end-->
+      </div>
+      <script src="js/jquery3.2.1.js"/></script>
+      <script src="js/bootstrap.js"/></script>
+      <script src="js/step.js"></script>
+   </body>
+</html>
